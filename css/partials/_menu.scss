@@ -6,6 +6,7 @@ header {
 
   @include respond-to('mobile-lg') {
     max-width: 390px;
+    padding-top: 14px;
   }
 
   @include respond-to('tablet') {
@@ -27,21 +28,27 @@ header {
 }
 
 .navbar {
-  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
-
-  padding: 0 100px;
+  padding: 0 12px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  @include respond-to('mobile-lg') {
+    width: 100%;
+    padding: 0 12px;
+  }
+
   @include respond-to('tablet') {
-    padding: 0 100px;
+    width: 100%;
+    padding: 0 12px;
   }
 
   @include respond-to('laptop') {
     max-width: 1366px;
+    padding: 0 100px;
   }
 
   @include respond-to('desktop') {

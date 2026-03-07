@@ -3,7 +3,7 @@
   max-width: 360px;
   margin: 0 auto;
 
-  padding: 24px 100px;
+  padding: 24px 12px;
 
   overflow: hidden;
 
@@ -12,12 +12,16 @@
   align-items: center;
 
   @include respond-to('mobile-lg') {
+    width: 100%;
     max-width: 390px;
+    padding: 24px 12px;
   }
 
   @include respond-to('tablet') {
+    width: 100%;
     max-width: 768px;
-    padding: 28px 100px;
+    margin: 0 auto;
+    padding: 28px 12px;
   }
 
   @include respond-to('laptop') {
