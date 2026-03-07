@@ -1,0 +1,36 @@
+// Breakpoints - Mobile First Approach
+$breakpoint-mobile: 360px;      // Mobile
+$breakpoint-mobile-lg: 390px;   // Mobile Grande
+$breakpoint-tablet: 768px;      // Tablet
+$breakpoint-laptop: 1366px;     // Laptop
+$breakpoint-desktop: 1440px;    // Desktop
+$breakpoint-desktop-lg: 1920px; // Desktop Grande
+
+// Mixins para facilitar media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'mobile' {
+    @media (min-width: $breakpoint-mobile) {
+      @content;
+    }
+  } @else if $breakpoint == 'mobile-lg' {
+    @media (min-width: $breakpoint-mobile-lg) {
+      @content;
+    }
+  } @else if $breakpoint == 'tablet' {
+    @media (min-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == 'laptop' {
+    @media (min-width: $breakpoint-laptop) {
+      @content;
+    }
+  } @else if $breakpoint == 'desktop' {
+    @media (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  } @else if $breakpoint == 'desktop-lg' {
+    @media (min-width: $breakpoint-desktop-lg) {
+      @content;
+    }
+  }
+}
