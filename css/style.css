@@ -46,7 +46,8 @@ p {
 }
 
 .container {
-  max-width: 1440px;
+  width: 100%;
+  max-width: 360px;
   margin: 0 auto;
   padding: 24px 100px;
   overflow: hidden;
@@ -54,26 +55,38 @@ p {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 390px) {
+  .container {
+    max-width: 390px;
+  }
+}
 @media (min-width: 768px) {
   .container {
+    max-width: 768px;
     padding: 28px 100px;
   }
 }
 @media (min-width: 1366px) {
   .container {
+    max-width: 1366px;
     flex-direction: row;
     align-items: center;
     padding: 36px 100px;
+    min-height: 100vh;
   }
 }
 @media (min-width: 1440px) {
   .container {
+    max-width: 1440px;
     padding: 36px 100px;
+    min-height: 100vh;
   }
 }
 @media (min-width: 1920px) {
   .container {
+    max-width: 1920px;
     padding: 40px 100px;
+    min-height: 100vh;
   }
 }
 
@@ -98,12 +111,15 @@ p {
   display: none;
   width: auto;
   margin-top: 0;
+  flex: 1;
 }
 @media (min-width: 1366px) {
   .container-item-2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -191,9 +207,19 @@ p {
 }
 @media (min-width: 1366px) {
   .spiderman {
-    width: 130%;
+    width: 150%;
+    height: auto;
     max-width: none;
-    transform: translate3d(-150px, 0, 0);
+  }
+}
+@media (min-width: 1440px) {
+  .spiderman {
+    width: 160%;
+  }
+}
+@media (min-width: 1920px) {
+  .spiderman {
+    width: 170%;
   }
 }
 
