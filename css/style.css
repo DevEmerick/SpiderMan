@@ -680,26 +680,18 @@ header {
 }
 .spiderman-title {
   opacity: 0;
-  animation: fadeInUp 1.8s cubic-bezier(0.22, 1, 0.5, 1) 0.15s forwards;
+  animation: fadeInUp 1.8s cubic-bezier(0.22, 1, 0.5, 1) 0.1s forwards;
+}
+
+.spiderman-image-mobile .spiderman,
+.container-item-2 .spiderman {
+  opacity: 0;
+  animation: fadeInUp 1.8s cubic-bezier(0.22, 1, 0.5, 1) 0.32s forwards;
 }
 
 .button-group {
   opacity: 0;
   animation: fadeInUp 1.6s cubic-bezier(0.22, 1, 0.5, 1) 0.85s forwards;
-}
-
-.spiderman-image-mobile .spiderman {
-  opacity: 0;
-  animation: fadeInUp 1.9s cubic-bezier(0.22, 1, 0.5, 1) 0.55s forwards;
-}
-
-@media (min-width: 1024px) {
-  .spiderman-image-mobile .spiderman,
-  .spiderman-title,
-  .button-group {
-    animation: none;
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

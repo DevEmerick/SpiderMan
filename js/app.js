@@ -19,11 +19,11 @@ function setupSpiderman3DEffect() {
     const rotateX = ((y - centerY) / centerY) * 10;
     const rotateY = ((x - centerX) / centerX) * 10;
     spidermanImg.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
-    spidermanImg.style.transition = 'transform 0.2s';
+    spidermanImg.style.transition = 'transform 0.9s cubic-bezier(0.23, 1, 0.32, 1)';
   });
   parent.addEventListener('mouseleave', () => {
     spidermanImg.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    spidermanImg.style.transition = 'transform 0.5s';
+    spidermanImg.style.transition = 'transform 1.1s cubic-bezier(0.23, 1, 0.32, 1)';
   });
 }
 
