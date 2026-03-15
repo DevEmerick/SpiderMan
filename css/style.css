@@ -8,9 +8,26 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  min-height: 100vh;
   background-color: #1a1a1a;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+@media (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+    max-height: 100vh;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+    max-height: 100vh;
+    margin: 0 auto;
+  }
 }
 
 img, svg {
@@ -46,8 +63,8 @@ p {
 }
 
 .container {
-  width: 100%;
-  max-width: 360px;
+  width: 100vw;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 24px 12px;
   overflow: hidden;
@@ -57,16 +74,13 @@ p {
 }
 @media (min-width: 390px) {
   .container {
-    width: 100%;
     max-width: 390px;
     padding: 24px 12px;
   }
 }
 @media (min-width: 768px) {
   .container {
-    width: 100%;
     max-width: 768px;
-    margin: 0 auto;
     padding: 28px 12px;
   }
 }
@@ -82,15 +96,19 @@ p {
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    max-height: 100vh;
     padding: 36px 100px;
     min-height: 100vh;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1920px) {
   .container {
     max-width: 1920px;
+    max-height: 100vh;
     padding: 40px 100px;
     min-height: 100vh;
+    margin: 0 auto;
   }
 }
 
