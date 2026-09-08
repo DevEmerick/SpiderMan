@@ -8,7 +8,15 @@
     "serve": "python3 -m http.server 8000",
     "dev": "npm run sass:watch"
   },
-  "keywords": ["spiderman", "ps5", "web", "responsive"],
+  "keywords": [
+    "spiderman",
+    "ps5",
+    "web",
+    "responsive"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
 }
